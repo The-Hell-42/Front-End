@@ -1,23 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!--script src="https://cdn.tailwindcss.com"></script-->
 </head>
+
 <body>
-    <nav class="px-4 py-4 bg-purple-900 text-white">
-        <ul class="flex">
-            <li class="mx-2 cursor-pointer">Home</li>
-            <li class="mx-2 cursor-pointer">About</li>
-            <li class="mx-2 cursor-pointer">Contact</li>
+    <p>This is the begining of Html Learning into Full Stack Web Development.</p>
+    <h1 id="h1">Hello, My Self Anurag Prasad Sah </h1>
+    <h2>This is H2</h2>
+    <p>This is just a dummy .</p><br>
+    <h3>This is h3</h3>
+    <p>This is just a dummy .</p><br>
+    <h4>This is h4</h4>
+    <p>This is just a dummy .</p><br>
+    <h5>This is h5</h5>
+    <p>This is just a dummy .</p><br>
+    <h6>This is h6</h6>
+    <p>This is just a dummy .</p><br>
+    <pre>This is a pre formated</pre>
+    <p>My name is <mark>Anurag Prasad Sah</mark> </p>
+    <p>
+        <strong>This text is bold using strong tag</strong>
+        <b>This is text is bold using bold tag</b>
+        <i>This is ltalic text</i>
+        <em>This text is more emphasized then italic tag</em>
+        <u>This is an underline text</u>
+
+    </p>
+    <p>hove on it to know the full description of <abbr title="Hypertext Markup Language">HTML</abbr></p>
+    <ins>New Text</ins>
+    <del>Deleted Text</del>
+    <s>Struck throug this text</s>
+    <sup>Superscript Here</sup>
+    <sub>Thsi is subscript here</sub>
+    <a href="https://www.google.com" title="Thiss is just an example of anchor tag">Click for link</a>
+    <a href="https://www.google.com" target="_blank" title="Thiss is just an example of anchor tag">Click for link</a>
+    <a href="#h1">Click to go to h1 tag</a>
+    <p>Link that dials a number
+        <br>
+        <a href="tel:+919999999999">call us </a>
+
+    </p>
+    <a href="mailto:anurag@gmail.com">Send us Email</a>
+    <section>
+        <p>This is a order list<br>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+        </p>
+        <p>THis is a unorderlist<br>
+        <ul>
+            <Li>A</Li>
+            <Li>B</Li>
+            <Li>C</Li>
         </ul>
-    </nav>
-    <div class="container">
-        <ul class="text-blue-900 my-4">
-            This is blue text
+        </p>
+        <p>THis is an orderlist with custom starting number<br>
+        <ol star="4">
+            <Li>A</Li>
+            <Li>B</Li>
+            <Li>C</Li>
+        </ol>
+        </p>
+        <p>This is a order list in reversed order<br>
+        <ol reversed>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+        </p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2
+                <ul>
+                    <li>sub-item 2.1</li>
+                    <li>sub-item 2.2</li>
+                </ul>
+            </li>
+            <li>item 3</li>
         </ul>
-    </div>
+        <p>This is a description list where data are store in name - value pair<br>
+        <dl>
+            <dt>Name</dt>
+            <dd>Anurag Sah</dd>
+            <dt>Class</dt>
+            <dd>Sophomore</dd>
+        </dl>
+        </p>
+
+    </section>
+    <section>
+        <h1>Tables</h1>
+        <p>Simple Table</p>
+        <table>
+            <tr>
+                <th>Heading 1 / Column 1</th>
+                <th>Heading 2 / Column 2</th>
+
+            </tr>
+            <tr>
+                <td>Row 1 Data Column 1</td>
+                <td>Row 1 Data Column 2</td>
+            </tr>
+            <tr>
+                <td>Row 1 Data Column 1</td>
+                <td>Row 2 Data Column 2</td>
+            </tr>
+        </table>
+        <p>This is a spanning Table</p>
+        <table>
+            <tr>
+                <td>row 1 col 1</td>
+                <td>row 1 col 2</td>
+                <td>row 1 col 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">This second row spans all three columns</td>
+            </tr>
+            <tr>
+                <td rowspan="2">This cell spans two rows</td>
+                <td>row 3 col 2</td>
+                <td>row 3 col 3</td>
+            </tr>
+            <tr>
+                <td>row 4 col 2</td>
+                <td>row 4 col 3</td>
+            </tr>
+        </table>
+        <p>
+            Table with thead, tbody, tfoot, and caption
+        </p>
+        <table>
+            <caption>Table Title</caption>
+            <thead>
+                <tr>
+                    <th>Header Content 1 </th>
+                    <th>Header Content 2 </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Body Content 1</td>
+                    <td>Body Content 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer Content 1</td>
+                    <td>Footer Content 2</td>
+                </tr>
+            </tfoot>
+        </table>
+        <label>
+            <input type="radio" name="color" value="#F00">
+            Red
+        </label>
+        <fieldset>
+            <legend>Theme color:</legend>
+            <p>
+                <input type="radio" name="color" id="red" value="#F00">
+                <label for="red">Red</label>
+            </p>
+            <p>
+                <input type="radio" name="color" id="green" value="#0F0">
+                <label for="green">Green</label>
+            </p>
+
+            <p>
+                <input type="radio" name="color" id="blue" value="#00F">
+                <label for="blue">Blue</label>
+            </p>
+        </fieldset>
+        <input type="color" name="favcolor" value="#ff0000">
+        <form action="/login" method="POST">
+
+            <label for="username">Username:</label>
+            <input id="username" type="text" name="username" />
+            <label for="pass">Password:</label>
+            <input id="pass" type="password" name="pass" />
+            <input type="submit" name="submit" />
+        </form>
+
+        <form id="my-form" action="/login" method="POST">
+
+            <input id="username" type="text" name="username" />
+
+            <label for="pass">Password:</label>
+            <input id="pass" type="password" name="pass" />
+            <input type="submit" name="submit" />
+        </form>
+        <label for="username" form="my-form">Username:</label>
+    </section>
+    <section>
+        <p>
+        <h1><b>Input control elements</b></h1>
+
+        </p>
+        <p>Checkox and Radio Buttons</p>
+        <input type="radio" name="name" id="name">
+        <label for="name">Name</label>
+        <input type="checkbox" name="Roll" id="roll">
+        <label for="roll">Roll</label>
+        <fieldset>
+            <legend>
+                Login Form
+            </legend>
+            <p>
+                <input type="radio" name="color" id="red" value="#foo">
+                <label for="red">Red</label>
+            </p>
+            <p>
+                <input type="radio" name="color" id="Green" value="#foo">
+                <label for="Green">Green</label>
+            </p>
+            <p>
+                <input type="radio" name="color" id="Blue" value="#foo">
+                <label for="Blue">Blue</label>
+            </p>
+            <br>
+            <p>Input Validation</p>
+            <input type="number" size="3" name="makrs" min="0" max="100" title="marks range from 0-100 only">
+            <form>
+                <input type="text" name="name" required><br>
+
+                <input type="email" name="email" required><br>
+                <input type="file" accept="image/*" title="Only image are allowed"><br>
+                <input type="submit" value="Publish"><br>
+                <input type="submit" value="save" formnovalidate><br>
+                <input type="color" name="favcolor">
+                <input type="password" name="password" placeholder="Password">
+            </form>
+            <form action="upload_file.php" method="post" enctype="multipart/form-data">
+                Select file to upload:
+                <input type="file" name="fileSubmission" id="fileSubmission">
+                <input type="submit" value="Upload your file" name="submit">
+                <input type="reset" value="Reset">
+            </form>
+
+        </fieldset>
+        <input type="image" src="img.png" alt="image_name" height="50px" width="50px" />
+        <input type="week" />
+        <fieldset>
+            <p><label>Meeting time: <input type=datetime name="meeting.start"></label>
+        </fieldset>
+
+    </section>
+    <section>
+        <fieldset>
+            <legend>Simple Login Form</legend>
+            <form action="/login" method="POST">
+
+                <label for="username">Username:</label>
+                <input id="username" type="text" name="username" />
+                <label for="pass">Password:</label>
+                <input id="pass" type="password" name="pass" />
+                <input type="submit" name="submit" />
+            </form>
+
+            <form id="my-form" action="/login" method="POST">
+
+                <input id="username" type="text" name="username" />
+
+                <label for="pass">Password:</label>
+                <input id="pass" type="password" name="pass" />
+                <input type="submit" name="submit" />
+            </form>
+            <label for="username" form="my-form">Username:</label>
+        </fieldset>
+        <form id="form1" name="form1" oninput="out1.value = parseInt(in1.value, 10) + parseInt(in2.value,
+10)">
+            <fieldset>
+                <legend>Output Example</legend>
+                <input type="number" id="in1" name="in1" value="0">
+                <br />
+                +
+                <input type="number" id="in2" name="in2" value="0">
+            </fieldset>
+        </form>
+        <!--[for] attribute enables out1 to display calculations for in1 and in2.-->
+        <!--[form] attribute designates form1 as the form owner of out1 even if it isn't a descendant.-->
+        <output name="out1" for="in1 in2" form="form1">0</output>
+
+    </section>
+
 </body>
+
 </html>
